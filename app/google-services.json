@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "581902350102",
+    "project_id": "schoolbus-2a9a1",
+    "storage_bucket": "schoolbus-2a9a1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:581902350102:android:6b3c747b9c05aa59b78237",
+        "android_client_info": {
+          "package_name": "com.school.schoolbustracking"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "581902350102-ikhnomkjg2an1qmfi0tltrum4udss9qb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.school.schoolbustracking",
+            "certificate_hash": "4ca1221fb5056fece1238c41666d7524235f6933"
+          }
+        },
+        {
+          "client_id": "581902350102-gu83pmk59bs5ffqrm6ic1vgri3co6qmt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDtzXovMrbfefCN6QNyDsczb1jhLHhxMSo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "581902350102-gu83pmk59bs5ffqrm6ic1vgri3co6qmt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+       <de.hdodenhof.circleimageview.CircleImageView
+           android:layout_width="90dp"
+           android:src="@drawable/avatar"
+           android:id="@+id/circle_imageview"
+           android:layout_marginTop="30dp"
+           android:layout_gravity="center"
+           android:layout_height="90dp"/>
+    <TextView
+
+        android:textColor="@android:color/background_light"
+        android:padding="5dp"
+        android:textSize="16sp"
+        android:layout_gravity="center"
+        android:id="@+id/txtname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+    <LinearLayout
+        android:gravity="center"
+        android:layout_margin="25dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="64dp"
+             app:lottie_rawRes="@raw/cancel"
+            app:lottie_autoPlay="true"
+            android:layout_marginRight="45dp"
+            app:lottie_loop="true"
+            app:lottie_speed="1.0"
+            android:id="@+id/lottieCancel"
+            android:layout_height="64dp"/>
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="64dp"
+            android:layout_marginLeft="35dp"
+            app:lottie_rawRes="@raw/call"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_speed="1.0"
+            android:id="@+id/littieAcept"
+            android:layout_height="64dp"/>
+    </LinearLayout>
+
+</LinearLayout>

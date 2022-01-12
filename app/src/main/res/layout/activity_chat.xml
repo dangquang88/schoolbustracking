@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:background="@color/main"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        style="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="32dp"
+                android:id="@+id/hinhanh"
+                android:layout_margin="5dp"
+                android:src="@drawable/avatar"
+
+                android:layout_height="32dp"/>
+            <TextView
+                android:gravity="center"
+                android:text="Thai Kaio"
+                android:textSize="14sp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/txtname"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"/>
+        </LinearLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginBottom="15dp"
+        android:id="@+id/rcvChat"
+        android:layout_height="0dp"/>
+    <LinearLayout
+        android:layout_marginBottom="7dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+     <EditText
+         android:layout_marginRight="7dp"
+         android:layout_marginLeft="7dp"
+         android:paddingLeft="10dp"
+         android:hint="Enter Message"
+         android:background="@drawable/custom_message"
+         android:id="@+id/editMessage"
+         android:layout_width="0dp"
+         android:layout_weight="1"
+         android:layout_height="50dp"/>
+        <Button
+            android:id="@+id/btnsend"
+            android:background="@drawable/custom_send"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center"
+            android:layout_width="42dp"
+            android:layout_height="42dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

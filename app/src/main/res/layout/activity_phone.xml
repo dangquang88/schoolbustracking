@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.appcompat.widget.Toolbar
+        android:background="@color/main"
+        android:id="@+id/toolbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        style="@style/ThemeOverlay.AppCompat.Dark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+
+        android:id="@+id/lphone"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:gravity="center"
+            android:id="@+id/editphone"
+            android:hint="Enter Phone Number"
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnverifone"
+            android:textColor="@android:color/background_light"
+            android:text="Verify Phone"
+            android:background="@drawable/custom_bg_button"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+    <LinearLayout
+       android:visibility="gone"
+        android:id="@+id/lveri"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:inputType="number"
+            android:maxLength="6"
+            android:gravity="center"
+            android:id="@+id/editvery"
+            android:hint="Enter Code (6 - digits)"
+            android:layout_margin="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btndone"
+            android:textColor="@android:color/background_light"
+            android:text="Done"
+            android:background="@drawable/custom_bg_button"
+            android:layout_gravity="center"
+            android:layout_width="250dp"
+            android:layout_height="50dp"/>
+    </LinearLayout>
+
+</LinearLayout>
