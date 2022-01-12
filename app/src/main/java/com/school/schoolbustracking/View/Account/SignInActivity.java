@@ -23,6 +23,8 @@ public class SignInActivity extends AppCompatActivity implements UserView {
     private Button btnlogin;
     private ShareF shareF;
 
+    //determine which user type it is
+    private int userType = 1;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -42,11 +44,12 @@ public class SignInActivity extends AppCompatActivity implements UserView {
                 if(username.length()>0 ){
                     if(pass.length()>0){
                         if(TASK.equalsIgnoreCase("Student")){
+                            userType = 1;
                             userPreSenter.HandleLoginUser(username,pass);
-                        }else{
-                            userPreSenter.HandleLoginUserTeacher(username,pass);
+                        }else {
+                            userType = 2;
+                            userPreSenter.HandleLoginUserTeacher(username, pass);
                         }
-
                     }else{
                         Toast.makeText(SignInActivity.this, "Mật khẩu không để trống!", Toast.LENGTH_SHORT).show();
                     }
@@ -66,9 +69,20 @@ public class SignInActivity extends AppCompatActivity implements UserView {
 
     @Override
     public void OnSucess(String uid) {
-     shareF.PutUID(uid);
-     startActivity(new Intent(SignInActivity.this, HomeActivity.class));
+        shareF.PutUID(uid);
 
+        //update user type
+        switch(userType){
+            case 1:
+                shareF.putUserType("student");
+                break;
+            case 2:
+                shareF.putUserType("teacher");
+                break;
+            default: break;
+        }
+
+        startActivity(new Intent(SignInActivity.this, HomeActivity.class));
     }
 
     @Override
