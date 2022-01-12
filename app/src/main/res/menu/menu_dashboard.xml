@@ -9,6 +9,12 @@
         android:icon="@drawable/ic_baseline_directions_bus_24"
         android:id="@+id/searchbus"
         android:title="Search Bus"/>
+
+    <item
+        android:id="@+id/busStatus"
+        android:title="Bus status"
+        android:icon="@drawable/ic_baseline_bus_list_24" />
+
     <item
         android:icon="@drawable/ic_baseline_perm_contact_calendar_24"
         android:id="@+id/contact"

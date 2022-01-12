@@ -41,6 +41,8 @@ import com.school.schoolbustracking.R;
 import com.school.schoolbustracking.View.Account.SignInActivity;
 import com.school.schoolbustracking.View.FragMent.FragMent_Contact;
 import com.school.schoolbustracking.View.FragMent.FragMent_Profile;
+import com.school.schoolbustracking.View.FragMent.Fragment_manageBus;
+import com.school.schoolbustracking.View.FragMent.Fragment_setBusStudent;
 import com.school.schoolbustracking.View.Map.MapsActivity;
 
 import java.util.Set;
@@ -65,7 +67,7 @@ public class HomeActivity  extends AppCompatActivity implements MapView, OnMapRe
         navigationView = findViewById(R.id.navigationview);
         drawerLayout = findViewById(R.id.drawerlayout);
         toolbar = findViewById(R.id.toolbar);
-        Init();
+        Init(this);
         fm = new FragMent_Profile();
         getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,fm).commit();
        
@@ -75,7 +77,7 @@ public class HomeActivity  extends AppCompatActivity implements MapView, OnMapRe
 
     }
 
-    private void Init() {
+    private void Init(Context context) {
         if(checkSelfPermission(Manifest.permission.RECORD_AUDIO)
                 != PackageManager.PERMISSION_GRANTED){
             requestPermissions(new String[]{Manifest.permission.RECORD_AUDIO},123);
@@ -96,16 +98,27 @@ public class HomeActivity  extends AppCompatActivity implements MapView, OnMapRe
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 switch (item.getItemId()){
-                    case R.id.searchbus: startActivity(new Intent( HomeActivity.this, MapsActivity.class));break;
-                    case R.id.profile:fm =new FragMent_Profile();break;
-                    case R.id.contact:fm =new FragMent_Contact();break;
-                    case R.id.signOut:startActivity(new Intent(HomeActivity.this, SignInActivity.class));finish();break;
+                    case R.id.searchbus: startActivity(new Intent( HomeActivity.this, MapsActivity.class)); break;
+                    case R.id.profile: fm = new FragMent_Profile(); break;
+                    case R.id.contact: fm = new FragMent_Contact(); break;
+                    case R.id.signOut:
+                        SharedPreferences sharedPreferences= getSharedPreferences("MENU",MODE_PRIVATE);
+                        SharedPreferences.Editor editor = sharedPreferences.edit();
+                        editor.putInt("K", 0);
+
+                        startActivity(new Intent(HomeActivity.this, MenuActivity.class));
+                        finish();
+                        break;
                     case  R.id.Location: UpdateLocation();break;
                     case R.id.home: fm=null;break;
                     case R.id.settings: startActivity( new Intent(HomeActivity.this, SettingsActivity.class));
 
+                        break;
+                    }
 
+                    default: break;
                 }
+
                 if(fm!=null){
                     frameLayout.setVisibility(View.VISIBLE);
                     getSupportFragmentManager().beginTransaction().replace(R.id.framelayout,fm).commit();

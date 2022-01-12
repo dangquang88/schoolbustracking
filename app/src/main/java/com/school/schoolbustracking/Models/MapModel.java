@@ -79,4 +79,9 @@ public class MapModel implements Serializable {
 
         }
     }
+
+    @Override
+    public String toString() {
+        return "address: " + getAddress();
+    }
 }

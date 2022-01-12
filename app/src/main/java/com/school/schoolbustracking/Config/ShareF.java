@@ -46,4 +46,12 @@ public class ShareF {
     public  String getToken(){
         return  sharedPreferences.getString("token","");
     }
+
+    public void putUserType(String type){
+        editor.putString("userType", type);
+        editor.commit();
+    }
+    public String getUserType(){
+        return sharedPreferences.getString("userType", "error");
+    }
 }
