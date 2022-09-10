@@ -52,14 +52,14 @@ System design
 Code cleaning
 
 ## 5. Functionalities
-_ Account login (teacher and student)
-_ View profile page
-_ Update profile page (avatar, password, phone number verification)
-_ Online message and calling
-_ Preference setting page(dark mode, full screen)
-_ Location Tracking
-_ Search Bus
-_ Bus management: Students can register to buses and then the teachers can manage (view/update) the on-board status of the students
+- Account login (teacher and student)
+- View profile page
+- Update profile page (avatar, password, phone number verification)
+- Online message and calling
+- Preference setting page(dark mode, full screen)
+- Location Tracking
+- Search Bus
+- Bus management: Students can register to buses and then the teachers can manage (view/update) the on-board status of the students
 
 ## 6. Technologies (Android Studio components)
 We propose to utilize the following technologies in our project to effectively develop the application (this is just estimation of what we need for the project, not the complete technology stack):
