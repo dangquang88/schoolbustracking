@@ -4,6 +4,7 @@ Bui Tien Huy - s3777230
 Pham Hoang Minh - s3871126
 ## 1.Application Description
 ![image](https://user-images.githubusercontent.com/57407516/189468563-50c8a342-e56e-4714-b703-7857b9a5f4ea.png)
+
 The project generally develops a multifunctional application that provides a number of useful features to support RMIT students, particularly in school bus tracking. The product’s goal is to deliver the greatest school life experience not only for students but also the lecturers. The main features of the application include:
 
  - Account login (lecturers, students, admin)
@@ -30,23 +31,23 @@ Components
 ## 4. Work Distribution:
 
 Nguyen Dang Quang - s3741190:
-_ Online calling video + message
-_  Realtime tracking location
-_ UI design (Figma)
-_Search bus
-_Login/logout
+- Online calling video + message
+- Realtime tracking location
+- UI design (Figma)
+- Search bus
+- Login/logout
 
 Bui Tien Huy - s3777230:
-_ OTP Phone Verification
-_ Editing Profile Page
-_ Upload user avatar picture
-_ Preference setting page(dark mode, full screen)
-_ Merging code, fixing conflict bugs
+- OTP Phone Verification
+- Editing Profile Page
+- Upload user avatar picture
+- Preference setting page(dark mode, full screen)
+- Merging code, fixing conflict bugs
 
 Pham Hoang Minh - s3871126:
 Bus management system for both students and teachers
-+ Student Register for bus with error handling
-+ Teacher Update on board status with error handling
+- Student Register for bus with error handling
+- Teacher Update on board status with error handling
 System design
 Code cleaning
 
