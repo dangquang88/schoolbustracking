@@ -1,5 +1,6 @@
 # RMIT School Bus Tracking
 ## 1.Application Description
+![image](https://user-images.githubusercontent.com/57407516/189468563-50c8a342-e56e-4714-b703-7857b9a5f4ea.png)
 The project generally develops a multifunctional application that provides a number of useful features to support RMIT students, particularly in school bus tracking. The product’s goal is to deliver the greatest school life experience not only for students but also the lecturers. The main features of the application include:
 
  - Account login (lecturers, students, admin)
@@ -12,14 +13,11 @@ The project generally develops a multifunctional application that provides a num
  - List of students/lecturers
  - App Settings (adjust theme, view credit page)
 
-
-
 ## 2.Application UI (Figma)
 Components
-
-
+![image](https://user-images.githubusercontent.com/57407516/189468544-b3305ce6-25bb-4102-9688-e188de7c8e43.png)
 ## 3.Application Flow (Diagram)
-
+![image](https://user-images.githubusercontent.com/57407516/189468581-d46e9714-619f-463a-ad2e-7aad1145ef0a.png)
 
 ## 4.Technologies (Android Studio components)
 
