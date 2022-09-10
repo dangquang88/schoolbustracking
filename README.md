@@ -1,4 +1,4 @@
-1. Application Description
+## Application Description
 
 The project generally develops a multifunctional application that provides a number of useful features to support RMIT students, particularly in school bus tracking. The product’s goal is to deliver the greatest school life experience not only for students but also the lecturers. The main features of the application include:
 
